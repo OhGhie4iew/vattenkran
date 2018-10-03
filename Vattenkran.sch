@@ -21768,11 +21768,12 @@ Source: www.kingbright.com</description>
 <text x="170.18" y="35.56" size="1.778" layer="91">Bluetooth</text>
 <text x="-30.48" y="109.22" size="1.778" layer="91">Solar regulator</text>
 <text x="-27.94" y="-33.02" size="1.778" layer="91">Valve power</text>
+<text x="96.52" y="50.8" size="1.778" layer="91">FIXME: High leakage current?</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="116.84" y="12.7"/>
 <instance part="SUPPLY9" gate="GND" x="116.84" y="-5.08"/>
-<instance part="Q2" gate="G$1" x="114.3" y="33.02"/>
+<instance part="Q2" gate="G$1" x="114.3" y="35.56" rot="R180"/>
 <instance part="SUPERCAP" gate="G$1" x="134.62" y="5.08"/>
 <instance part="SUPPLY10" gate="GND" x="134.62" y="-2.54"/>
 <instance part="SUPPLY15" gate="GND" x="-81.28" y="25.4"/>
@@ -22009,7 +22010,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="RTC_CE" class="0">
 <segment>
-<wire x1="104.14" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="CE"/>
 <junction x="101.6" y="15.24"/>
 <wire x1="101.6" y1="15.24" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
@@ -22025,7 +22025,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="RTC_IO" class="0">
 <segment>
-<wire x1="104.14" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="I/O"/>
 <junction x="101.6" y="12.7"/>
 <wire x1="101.6" y1="12.7" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
@@ -22041,7 +22040,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="RTC_SCLK" class="0">
 <segment>
-<wire x1="104.14" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SCLK"/>
 <junction x="101.6" y="10.16"/>
 <wire x1="101.6" y1="10.16" x2="93.98" y2="10.16" width="0.1524" layer="91"/>
@@ -22055,26 +22053,11 @@ Source: www.kingbright.com</description>
 <label x="40.64" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="X1"/>
-<pinref part="Q2" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="27.94" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="X2"/>
-<pinref part="Q2" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="27.94" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SUPERCAP" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VBAT"/>
 <pinref part="SUPERCAP" gate="G$1" pin="+"/>
-<wire x1="132.08" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="10.16" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="10.16" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
 <junction x="132.08" y="10.16"/>
 </segment>
 </net>
@@ -22148,7 +22131,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="VCC33" class="0">
 <segment>
-<wire x1="129.54" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
 <label x="134.62" y="20.32" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="132.08" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
@@ -22338,14 +22320,26 @@ Source: www.kingbright.com</description>
 <junction x="91.44" y="60.96"/>
 </segment>
 </net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="X1"/>
+<wire x1="111.76" y1="35.56" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="X2"/>
+<pinref part="Q2" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="27.94" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,1,132.08,10.16,U$1,VBAT,SUPERCAP,,,"/>
 <approved hash="104,1,132.08,17.78,U$1,VCC,VCC33,,,"/>
-<approved hash="104,1,205.74,2.54,U$4,GND,BT_GND,,,"/>
-<approved hash="104,1,205.74,33.02,U$4,VCC,BT_VCC33,,,"/>
 <approved hash="104,1,132.08,91.44,U$5,V_IN,V_UNREG,,,"/>
 <approved hash="104,1,40.64,-55.88,U$6,V_IN_GND,GND,,,"/>
 <approved hash="104,1,40.64,-48.26,U$6,V_IN,V_VALVE_UNREG,,,"/>
