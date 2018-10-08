@@ -133,6 +133,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -433,83 +435,6 @@ Size: 43 x 22 x 16mm&lt;br/&gt;
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="fuse" urn="urn:adsk.eagle:library:233">
-<description>&lt;b&gt;Fuses and Fuse Holders&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MF-SMDF050" urn="urn:adsk.eagle:footprint:14055/1" library_version="1">
-<description>&lt;b&gt;MF-SMDF Series - PRC Resettable Fuses&lt;/b&gt;&lt;p&gt;
-Source: http://www.farnell.com/datasheets/716597.pdf</description>
-<smd name="1" x="-2.45" y="0" dx="1.5" dy="4.6" layer="1"/>
-<smd name="2" x="2.45" y="0" dx="1.5" dy="4.6" layer="1"/>
-<wire x1="-2.675" y1="-2.4125" x2="-2.675" y2="-0.8" width="0.1016" layer="51"/>
-<wire x1="-2.675" y1="-0.8" x2="-2.6625" y2="-0.8" width="0.1016" layer="51"/>
-<wire x1="-2.6625" y1="-0.8" x2="-2.6625" y2="0.7875" width="0.1016" layer="51" curve="126.343451"/>
-<wire x1="-2.6625" y1="0.7875" x2="-2.675" y2="0.7875" width="0.1016" layer="51"/>
-<wire x1="-2.675" y1="0.7875" x2="-2.675" y2="2.4125" width="0.1016" layer="51"/>
-<wire x1="-2.675" y1="2.4125" x2="-1.825" y2="2.4125" width="0.1016" layer="51"/>
-<wire x1="-1.825" y1="2.4125" x2="1.825" y2="2.4125" width="0.1016" layer="51"/>
-<wire x1="1.825" y1="2.4125" x2="2.675" y2="2.4125" width="0.1016" layer="51"/>
-<wire x1="2.675" y1="2.4125" x2="2.675" y2="0.8" width="0.1016" layer="51"/>
-<wire x1="2.675" y1="-0.7875" x2="2.675" y2="-2.4125" width="0.1016" layer="51"/>
-<wire x1="2.675" y1="-2.4125" x2="1.825" y2="-2.4125" width="0.1016" layer="51"/>
-<wire x1="1.825" y1="-2.4125" x2="-1.825" y2="-2.4125" width="0.1016" layer="51"/>
-<wire x1="-1.825" y1="-2.4125" x2="-2.675" y2="-2.4125" width="0.1016" layer="51"/>
-<wire x1="-1.825" y1="-2.4125" x2="-1.825" y2="2.4125" width="0.1016" layer="51"/>
-<wire x1="1.825" y1="2.4125" x2="1.825" y2="-2.4125" width="0.1016" layer="51"/>
-<wire x1="2.675" y1="0.8" x2="2.675" y2="-0.7875" width="0.1016" layer="51" curve="126.343451"/>
-<text x="-3.1" y="2.7" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.225" y="-4.05" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="MF-SMDF050" urn="urn:adsk.eagle:package:14081/1" type="box" library_version="1">
-<description>MF-SMDF Series - PRC Resettable Fuses
-Source: http://www.farnell.com/datasheets/716597.pdf</description>
-<packageinstances>
-<packageinstance name="MF-SMDF050"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="FUSE" urn="urn:adsk.eagle:symbol:14027/1" library_version="1">
-<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MF-SMDF" urn="urn:adsk.eagle:component:14104/1" library_version="1">
-<description>&lt;b&gt;MF-SMDF Series - PRC Resettable Fuses&lt;/b&gt;&lt;p&gt;
-Source: http://www.farnell.com/datasheets/716597.pdf</description>
-<gates>
-<gate name="A" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MF-SMDF050">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14081/1"/>
-</package3dinstances>
-<technologies>
-<technology name="050"/>
-<technology name="150"/>
-<technology name="200"/>
 </technologies>
 </device>
 </devices>
@@ -9181,6 +9106,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
 <rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
 </package>
+<package name="1812">
+<description>PTC 1812</description>
+<smd name="P$1" x="0" y="1.725" dx="3.5" dy="1.78" layer="1"/>
+<smd name="P$2" x="0" y="-1.725" dx="3.5" dy="1.78" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MFP-D">
@@ -9226,6 +9156,20 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pin name="S" x="2.54" y="7.62" length="middle" rot="R270"/>
 <pin name="D" x="2.54" y="-7.62" length="middle" rot="R90"/>
 </symbol>
+<symbol name="PTC">
+<description>PTC Polyfuse</description>
+<pin name="P$1" x="-15.24" y="0" length="middle"/>
+<pin name="P$2" x="15.24" y="0" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FDS6675">
@@ -9251,6 +9195,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="D" pad="5 6 7 8"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTC">
+<description>&lt;h1&gt;PTC polyfuse&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1812">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11193,11 +11154,9 @@ Source: www.kingbright.com</description>
 <part name="U$8" library="breakout-modules" deviceset="LM2576HVS_BUCK_MODULE" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$10" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="MF-SMDF" device="" package3d_urn="urn:adsk.eagle:package:14081/1" technology="150" value="500mA"/>
-<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2"/>
+<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24"/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$11" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="MF-SMDF" device="" package3d_urn="urn:adsk.eagle:package:14081/1" technology="150" value="2A"/>
-<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2"/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24"/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH3" value="Solar"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -11212,15 +11171,17 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$9" library="Semiconductors" deviceset="FDS6675" device=""/>
-<part name="U$3" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="MF-SMDF" device="" package3d_urn="urn:adsk.eagle:package:14081/1" technology="150" value="1A"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2"/>
+<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="PTH3" value="Valve"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPS" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="M02" device="PTH3" value="Button"/>
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPS" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="U$1" library="Semiconductors" deviceset="PTC" device="" value="1A"/>
+<part name="U$4" library="Semiconductors" deviceset="PTC" device="" value="2A"/>
+<part name="U$3" library="Semiconductors" deviceset="PTC" device="" value="2A"/>
 </parts>
 <sheets>
 <sheet>
@@ -11242,14 +11203,12 @@ Source: www.kingbright.com</description>
 <instance part="U$8" gate="G$1" x="43.18" y="63.5"/>
 <instance part="SUPPLY13" gate="GND" x="63.5" y="53.34"/>
 <instance part="SUPPLY14" gate="GND" x="22.86" y="53.34"/>
-<instance part="U$10" gate="A" x="-7.62" y="68.58"/>
 <instance part="D2" gate="G$1" x="7.62" y="58.42" rot="R90"/>
 <instance part="SUPPLY19" gate="GND" x="7.62" y="50.8"/>
-<instance part="U$11" gate="A" x="-5.08" y="27.94"/>
 <instance part="D3" gate="G$1" x="10.16" y="17.78" rot="R90"/>
 <instance part="SUPPLY24" gate="GND" x="10.16" y="7.62"/>
-<instance part="J2" gate="G$1" x="-35.56" y="66.04"/>
-<instance part="SUPPLY16" gate="GND" x="-27.94" y="58.42"/>
+<instance part="J2" gate="G$1" x="-48.26" y="66.04"/>
+<instance part="SUPPLY16" gate="GND" x="-40.64" y="58.42"/>
 <instance part="J1" gate="G$1" x="-35.56" y="25.4"/>
 <instance part="SUPPLY12" gate="GND" x="-22.86" y="22.86"/>
 <instance part="TP3" gate="G$1" x="182.88" y="68.58" rot="R270"/>
@@ -11261,15 +11220,17 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY2" gate="GND" x="71.12" y="-35.56"/>
 <instance part="SUPPLY3" gate="GND" x="111.76" y="-35.56"/>
 <instance part="U$9" gate="G$1" x="40.64" y="-22.86" rot="R90"/>
-<instance part="U$3" gate="A" x="142.24" y="-20.32"/>
 <instance part="SUPPLY18" gate="GND" x="129.54" y="-38.1"/>
 <instance part="D4" gate="G$1" x="129.54" y="-30.48" rot="R90"/>
-<instance part="J3" gate="G$1" x="162.56" y="-20.32" rot="R180"/>
-<instance part="SUPPLY9" gate="GND" x="154.94" y="-38.1"/>
+<instance part="J3" gate="G$1" x="182.88" y="-20.32" rot="R180"/>
+<instance part="SUPPLY9" gate="GND" x="175.26" y="-38.1"/>
 <instance part="TP5" gate="G$1" x="7.62" y="-40.64" rot="R90"/>
 <instance part="J4" gate="G$1" x="-35.56" y="-25.4"/>
 <instance part="TP1" gate="G$1" x="-20.32" y="-22.86" rot="R270"/>
 <instance part="SUPPLY10" gate="GND" x="-27.94" y="-33.02"/>
+<instance part="U$1" gate="G$1" x="-7.62" y="68.58"/>
+<instance part="U$4" gate="G$1" x="-5.08" y="27.94"/>
+<instance part="U$3" gate="G$1" x="152.4" y="-20.32"/>
 </instances>
 <busses>
 </busses>
@@ -11324,7 +11285,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<wire x1="-27.94" y1="60.96" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="60.96" x2="-40.64" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -11354,7 +11315,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<wire x1="154.94" y1="-22.86" x2="154.94" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-22.86" x2="175.26" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
@@ -11388,13 +11349,13 @@ Source: www.kingbright.com</description>
 <wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="IN"/>
 <junction x="22.86" y="68.58"/>
-<pinref part="U$10" gate="A" pin="2"/>
-<wire x1="-2.54" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="7.62" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="60.96" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 <junction x="7.62" y="68.58"/>
 <label x="2.54" y="73.66" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<junction x="7.62" y="68.58"/>
 </segment>
 </net>
 <net name="V_UNREG" class="0">
@@ -11420,15 +11381,16 @@ Source: www.kingbright.com</description>
 </net>
 <net name="V_SOLAR" class="0">
 <segment>
-<wire x1="-30.48" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<junction x="-27.94" y="68.58"/>
-<pinref part="U$10" gate="A" pin="1"/>
-<wire x1="-27.94" y1="68.58" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
-<label x="-20.32" y="76.2" size="1.778" layer="95"/>
-<wire x1="-12.7" y1="68.58" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="68.58" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-20.32" y="68.58"/>
+<junction x="-40.64" y="68.58"/>
+<wire x1="-40.64" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
+<label x="-33.02" y="76.2" size="1.778" layer="95"/>
+<wire x1="-22.86" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="68.58" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-33.02" y="68.58"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<junction x="-22.86" y="68.58"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -11438,19 +11400,20 @@ Source: www.kingbright.com</description>
 <wire x1="96.52" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="V_BATT+"/>
 <junction x="96.52" y="50.8"/>
-<pinref part="U$11" gate="A" pin="2"/>
-<wire x1="10.16" y1="27.94" x2="0" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="20.32" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<junction x="10.16" y="27.94"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
 <junction x="10.16" y="27.94"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$11" gate="A" pin="1"/>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="27.94" x2="-10.16" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="27.94" x2="-20.32" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-27.94" y="27.94"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<junction x="-20.32" y="27.94"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -11490,10 +11453,12 @@ Source: www.kingbright.com</description>
 </net>
 <net name="VALVE" class="0">
 <segment>
-<pinref part="U$3" gate="A" pin="2"/>
-<wire x1="147.32" y1="-20.32" x2="154.94" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-20.32" x2="167.64" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="1"/>
-<junction x="154.94" y="-20.32"/>
+<junction x="175.26" y="-20.32"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="167.64" y1="-20.32" x2="175.26" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="167.64" y="-20.32"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -11501,12 +11466,13 @@ Source: www.kingbright.com</description>
 <wire x1="109.22" y1="-20.32" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="V_OUT"/>
 <junction x="111.76" y="-20.32"/>
-<pinref part="U$3" gate="A" pin="1"/>
 <wire x1="111.76" y1="-20.32" x2="129.54" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="-20.32" x2="137.16" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="-27.94" x2="129.54" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="129.54" y="-20.32"/>
 <pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<junction x="137.16" y="-20.32"/>
 </segment>
 </net>
 <net name="BUTTON_WAKEUP_INT" class="0">
