@@ -18403,12 +18403,12 @@ Source: AVX .. aphvc.pdf</description>
 <vertex x="-5" y="24"/>
 <vertex x="-6" y="24"/>
 </polygon>
-<pad name="VCC" x="-6.5" y="1.25" drill="0.6" diameter="1" shape="offset" rot="R180"/>
-<pad name="GND" x="-5" y="0" drill="0.6" diameter="1" shape="offset" rot="R270"/>
-<pad name="BRK" x="6.5" y="1.25" drill="0.6" diameter="1" shape="offset" rot="R180"/>
-<pad name="STATE" x="6.5" y="2.5" drill="0.6" diameter="1" shape="offset" rot="R180"/>
-<pad name="TX" x="-6.5" y="16.25" drill="0.6" diameter="1" shape="offset"/>
-<pad name="RX" x="-6.5" y="15" drill="0.6" diameter="1" shape="offset"/>
+<pad name="VCC" x="-6.5" y="3" drill="0.6" diameter="0.85" shape="offset" rot="R180"/>
+<pad name="GND" x="-6.5" y="1.75" drill="0.6" diameter="0.85" shape="offset" rot="R180"/>
+<pad name="BRK" x="6.5" y="3" drill="0.6" diameter="0.85" shape="offset" rot="R180"/>
+<pad name="STATE" x="6.5" y="4.25" drill="0.6" diameter="0.85" shape="offset" rot="R180"/>
+<pad name="TX" x="-6.5" y="19.5" drill="0.6" diameter="0.85" shape="offset"/>
+<pad name="RX" x="-6.5" y="18.25" drill="0.6" diameter="0.85" shape="offset"/>
 <text x="0.5" y="10.5" size="1.27" layer="1" rot="R90">HM-10</text>
 <text x="0.5" y="10.5" size="1.27" layer="21" rot="R90">HM-10</text>
 </package>
