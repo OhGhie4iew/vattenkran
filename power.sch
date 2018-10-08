@@ -11527,6 +11527,9 @@ Source: www.kingbright.com</description>
 <errors>
 <approved hash="104,1,137.16,68.58,U$5,V_IN,V_UNREG,,,"/>
 <approved hash="104,1,22.86,68.58,U$8,IN,V_SOLAR_FUSED,,,"/>
+<approved hash="104,1,71.12,-27.94,U$6,V_IN_GND,GND,,,"/>
+<approved hash="104,1,71.12,-20.32,U$6,V_IN,V_VALVE_UNREG,,,"/>
+<approved hash="104,1,111.76,-27.94,U$6,V_OUT_GND,GND,,,"/>
 </errors>
 </schematic>
 </drawing>
