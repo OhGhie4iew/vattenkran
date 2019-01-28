@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -244,29 +244,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 	&lt;li&gt;XL6009 Boost converter&lt;/li&gt;
 &lt;/ul&gt;</description>
 <packages>
-<package name="BATTERY_CHARGER">
-<wire x1="-8.75" y1="14" x2="-4" y2="14" width="0.127" layer="21"/>
-<wire x1="-4" y1="14" x2="4" y2="14" width="0.127" layer="21"/>
-<wire x1="4" y1="14" x2="8.75" y2="14" width="0.127" layer="21"/>
-<wire x1="8.75" y1="14" x2="8.75" y2="-14" width="0.127" layer="21"/>
-<wire x1="8.75" y1="-14" x2="6.5" y2="-14" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-14" x2="6.5" y2="-12.5" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-12.5" x2="-6.5" y2="-12.5" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-12.5" x2="-6.5" y2="-14" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-14" x2="-8.75" y2="-14" width="0.127" layer="21"/>
-<wire x1="-8.75" y1="-14" x2="-8.75" y2="14" width="0.127" layer="21"/>
-<wire x1="-4" y1="14" x2="-4" y2="15.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="15.5" x2="4" y2="15.5" width="0.127" layer="21"/>
-<wire x1="4" y1="15.5" x2="4" y2="14" width="0.127" layer="21"/>
-<pad name="GND@1" x="-6.75" y="11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_IN" x="6.75" y="11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="GND@2" x="-6.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_BATT-" x="-3.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_BATT+" x="3.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_OUT" x="6.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<text x="-3" y="3" size="1.27" layer="21">Battery
-Charger</text>
-</package>
 <package name="QSKJ_BOOST_MODULE">
 <pad name="GND@1" x="-5.75" y="7.62" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
 <pad name="V_IN" x="-5.75" y="-7.62" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
@@ -280,22 +257,6 @@ Charger</text>
 <text x="-3.5" y="-11" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.25" y="-1.25" size="1.27" layer="48">Boost
 Converter</text>
-</package>
-<package name="LM2576HVS_BUCK_MODULE">
-<wire x1="0" y1="28" x2="0" y2="2" width="0.127" layer="21"/>
-<wire x1="0" y1="2" x2="2" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="2" y1="0" x2="42" y2="0" width="0.127" layer="21"/>
-<wire x1="42" y1="0" x2="44" y2="2" width="0.127" layer="21" curve="90"/>
-<wire x1="44" y1="2" x2="44" y2="28" width="0.127" layer="21"/>
-<wire x1="44" y1="28" x2="42" y2="30" width="0.127" layer="21" curve="90"/>
-<wire x1="42" y1="30" x2="2" y2="30" width="0.127" layer="21"/>
-<wire x1="2" y1="30" x2="0" y2="28" width="0.127" layer="21" curve="90"/>
-<text x="16" y="14" size="1.27" layer="21">LM2576HVS
-Buck converter</text>
-<pad name="IN" x="5" y="3.5" drill="1" diameter="5" shape="square"/>
-<pad name="GND@1" x="5" y="26.5" drill="1" diameter="5" shape="square"/>
-<pad name="GND@2" x="39" y="26.5" drill="1" diameter="5" shape="square"/>
-<pad name="OUT" x="39" y="3.5" drill="1" diameter="5" shape="square"/>
 </package>
 <package name="XL6009_BOOST_MODULE">
 <pad name="V_IN_GND" x="0" y="0" drill="1" diameter="3" shape="square"/>
@@ -313,6 +274,22 @@ Buck converter</text>
 <text x="-1.27" y="2.54" size="1.27" layer="21">IN -</text>
 <text x="36.83" y="13.97" size="1.27" layer="21">OUT +</text>
 <text x="36.83" y="2.54" size="1.27" layer="21">OUT -</text>
+</package>
+<package name="CN3791_MPPT_LIPO_SOLAR_CHARGER">
+<pad name="PANEL" x="5" y="28" drill="1.5" diameter="4" shape="octagon"/>
+<pad name="GND@1" x="5" y="13" drill="1.5" diameter="4" shape="octagon"/>
+<pad name="BATT+" x="25" y="2.4" drill="1.5" diameter="4" shape="octagon"/>
+<pad name="GND@2" x="20" y="2.4" drill="1.5" diameter="4" shape="octagon"/>
+<wire x1="0" y1="0" x2="0" y2="31" width="0.127" layer="21"/>
+<wire x1="0" y1="31" x2="49" y2="31" width="0.127" layer="21"/>
+<wire x1="49" y1="31" x2="49" y2="0" width="0.127" layer="21"/>
+<wire x1="49" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<hole x="4" y="4" drill="3"/>
+<hole x="45" y="4" drill="3"/>
+<hole x="45" y="27" drill="3"/>
+<text x="15" y="16" size="1.27" layer="21">CN3791 MPPT Charger</text>
+<text x="3" y="21" size="1.27" layer="21">Panel</text>
+<text x="21" y="6" size="1.27" layer="21">Batt</text>
 </package>
 </packages>
 </library>
@@ -1589,6 +1566,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1689,44 +1669,63 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" package="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24" x="24" y="64" rot="MR180"/>
-<element name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" package="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24" x="30" y="38" rot="MR90"/>
-<element name="J1" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Battery" x="9" y="40" rot="R270"/>
-<element name="J2" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Solar" x="6" y="60" rot="R270"/>
-<element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPSB1,27" x="65.25" y="40" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="65.25" y="40" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" package="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24" x="31" y="36" smashed="yes" rot="MR270">
+<attribute name="NAME" x="28.841" y="38.159" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="34.429" y="38.159" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="U$2" library="breakout-modules" package="BATTERY_CHARGER" value="BATTERY_CHARGER" x="24.72" y="38.59" rot="R270"/>
-<element name="U$5" library="breakout-modules" package="QSKJ_BOOST_MODULE" value="QSKJ_BOOST_MODULE" x="52.47" y="38.18"/>
-<element name="U$8" library="breakout-modules" package="LM2576HVS_BUCK_MODULE" value="LM2576HVS_BUCK_MODULE" x="10.85" y="49.27"/>
-<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="GREEN" x="6" y="29" rot="R90"/>
-<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="3K3" x="5" y="33" rot="MR0"/>
-<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="1M" x="40" y="25" rot="MR270"/>
-<element name="U$6" library="breakout-modules" package="XL6009_BOOST_MODULE" value="XL6009_BOOST_MODULE" x="53" y="23" rot="R180"/>
-<element name="U$9" library="Semiconductors" package="SO08" value="FDS6675" x="38" y="15" rot="MR180"/>
-<element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24" x="23" y="15" rot="MR180"/>
-<element name="J3" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Valve" x="6" y="20" rot="R90"/>
-<element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPSB1,27" x="65" y="20" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="65" y="20" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="J1" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Battery" x="9" y="40" smashed="yes" rot="R270"/>
+<element name="J2" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Solar" x="6" y="60" smashed="yes" rot="R270"/>
+<element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPSB1,27" x="65.25" y="40" smashed="yes" rot="MR0">
+<attribute name="NAME" x="65.885" y="41.016" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="65.885" y="38.095" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="65.885" y="39.238" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="J4" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Button" x="6" y="45" rot="R90"/>
-<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPSB1,27" x="65" y="60" rot="MR90">
-<attribute name="TP_SIGNAL_NAME" value="" x="65" y="60" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="U$5" library="breakout-modules" package="QSKJ_BOOST_MODULE" value="QSKJ_BOOST_MODULE" x="45.82" y="37.47" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.82" y="33.97" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.82" y="33.97" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$1" library="Semiconductors" package="1812" value="1A" x="14" y="64" rot="MR270"/>
-<element name="U$4" library="Semiconductors" package="1812" value="2A" x="20" y="37" rot="MR0"/>
-<element name="U$3" library="Semiconductors" package="1812" value="2A" x="12" y="15" rot="MR90"/>
+<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="GREEN" x="6" y="29" smashed="yes" rot="R90">
+<attribute name="NAME" x="5.619" y="30.905" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="7.651" y="30.905" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="3K3" x="5" y="33" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.635" y="34.27" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="5.635" y="30.46" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="1M" x="40" y="25" smashed="yes" rot="MR270">
+<attribute name="NAME" x="38.73" y="25.635" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="42.54" y="25.635" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="U$6" library="breakout-modules" package="XL6009_BOOST_MODULE" value="XL6009_BOOST_MODULE" x="53" y="23" smashed="yes" rot="R180"/>
+<element name="U$9" library="Semiconductors" package="SO08" value="FDS6675" x="38" y="15" smashed="yes" rot="MR180">
+<attribute name="NAME" x="35.079" y="16.905" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="41.937" y="17.032" size="1.27" layer="28" ratio="10" rot="MR270"/>
+</element>
+<element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24" x="23" y="15" smashed="yes" rot="MR180">
+<attribute name="NAME" x="20.841" y="12.841" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="20.841" y="18.429" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="J3" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Valve" x="6" y="20" smashed="yes" rot="R90"/>
+<element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPSB1,27" x="65" y="20" smashed="yes" rot="MR0">
+<attribute name="NAME" x="65.635" y="21.016" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="65.635" y="18.095" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="65.635" y="19.238" size="0.0254" layer="28" rot="MR0"/>
+</element>
+<element name="J4" library="SparkFun-Connectors" package="1X02_LONGPADS" value="Button" x="6" y="45" smashed="yes" rot="R90"/>
+<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPSB1,27" x="65" y="60" smashed="yes" rot="MR90">
+<attribute name="NAME" x="66.016" y="59.365" size="1.27" layer="26" ratio="10" rot="MR90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="63.095" y="59.365" size="1" layer="38" rot="MR90"/>
+<attribute name="VALUE" x="64.238" y="59.365" size="0.0254" layer="28" rot="MR90"/>
+</element>
+<element name="U$1" library="Semiconductors" package="1812" value="1A" x="14" y="67" smashed="yes" rot="MR270"/>
+<element name="U$4" library="Semiconductors" package="1812" value="2A" x="18" y="38" smashed="yes" rot="MR270"/>
+<element name="U$3" library="Semiconductors" package="1812" value="2A" x="12" y="15" smashed="yes" rot="MR90"/>
+<element name="U$2" library="breakout-modules" package="CN3791_MPPT_LIPO_SOLAR_CHARGER" value="CN3791_MTTP_LIPO_SOLAR_CHARGER" x="12" y="48" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="U$5" pad="GND@1"/>
 <contactref element="U$5" pad="GND@2"/>
-<contactref element="U$2" pad="GND@2"/>
-<contactref element="U$2" pad="GND@1"/>
-<contactref element="U$2" pad="V_BATT-"/>
-<contactref element="U$8" pad="GND@2"/>
-<contactref element="U$8" pad="GND@1"/>
-<contactref element="D2" pad="A"/>
 <contactref element="D3" pad="A"/>
 <contactref element="J2" pad="1"/>
 <contactref element="J1" pad="1"/>
@@ -1742,38 +1741,27 @@ design rules under a new name.</description>
 <contactref element="D4" pad="A"/>
 <contactref element="J3" pad="2"/>
 <contactref element="J4" pad="1"/>
+<contactref element="U$2" pad="GND@2"/>
+<contactref element="U$2" pad="GND@1"/>
 </signal>
 <signal name="VCC5">
 <contactref element="U$5" pad="V_OUT"/>
 <contactref element="TP3" pad="TP"/>
-<wire x1="58.22" y1="30.56" x2="58.22" y2="37.22" width="0.8128" layer="16"/>
-<wire x1="58.22" y1="37.22" x2="61" y2="40" width="0.8128" layer="16"/>
-<wire x1="61" y1="40" x2="65.25" y2="40" width="0.8128" layer="16"/>
-</signal>
-<signal name="V_CHARGER">
-<contactref element="U$2" pad="V_IN"/>
-<contactref element="U$8" pad="OUT"/>
-<wire x1="49.85" y1="52.77" x2="44.77" y2="52.77" width="0.8128" layer="16"/>
-<wire x1="44.77" y1="52.77" x2="42" y2="50" width="0.8128" layer="16"/>
-<wire x1="42" y1="50" x2="42" y2="36" width="0.8128" layer="16"/>
-<wire x1="42" y1="36" x2="37.84" y2="31.84" width="0.8128" layer="16"/>
-<wire x1="37.84" y1="31.84" x2="35.97" y2="31.84" width="0.8128" layer="16"/>
+<wire x1="55.22" y1="40.22" x2="53.44" y2="42.454309375" width="0.8128" layer="16"/>
+<wire x1="53.44" y1="43.22" x2="53.44" y2="42.454309375" width="0.8128" layer="16"/>
+<wire x1="55.22" y1="40.22" x2="55" y2="40" width="0.8128" layer="16"/>
+<wire x1="55" y1="40" x2="65.25" y2="40" width="0.8128" layer="16"/>
 </signal>
 <signal name="V_SOLAR_FUSED">
-<contactref element="U$8" pad="IN"/>
-<contactref element="D2" pad="C"/>
 <contactref element="U$1" pad="P$2"/>
-<wire x1="15.85" y1="52.77" x2="15.85" y2="63.875" width="0.8128" layer="16"/>
-<wire x1="15.85" y1="63.875" x2="15.725" y2="64" width="0.8128" layer="16"/>
-<wire x1="15.725" y1="64" x2="21.8" y2="64" width="0.8128" layer="16"/>
+<wire x1="15.85" y1="66.875" x2="15.725" y2="67" width="0.8128" layer="16"/>
+<contactref element="U$2" pad="PANEL"/>
+<wire x1="15.725" y1="67" x2="17" y2="68.275" width="0.8128" layer="16"/>
+<wire x1="17" y1="68.275" x2="17" y2="76" width="0.8128" layer="16"/>
 </signal>
 <signal name="V_UNREG">
-<contactref element="U$2" pad="V_OUT"/>
 <contactref element="U$5" pad="V_IN"/>
-<wire x1="13.47" y1="31.84" x2="22.31" y2="32" width="0.8128" layer="16"/>
-<wire x1="22.31" y1="32" x2="25.31" y2="32" width="0.8128" layer="16"/>
-<wire x1="25.31" y1="32" x2="31" y2="28" width="0.8128" layer="16"/>
-<wire x1="31" y1="28" x2="36" y2="28" width="0.8128" layer="16"/>
+<wire x1="36" y1="28" x2="27.389265625" y2="28" width="0.8128" layer="16"/>
 <wire x1="36" y1="28" x2="40" y2="28" width="0.8128" layer="16"/>
 <contactref element="R1" pad="1"/>
 <contactref element="U$9" pad="2"/>
@@ -1786,32 +1774,34 @@ design rules under a new name.</description>
 <wire x1="36.095" y1="18.0734" x2="36.095" y2="27.905" width="0.8128" layer="16"/>
 <wire x1="36.095" y1="27.905" x2="36" y2="28" width="0.8128" layer="16"/>
 <wire x1="40" y1="25.95" x2="40" y2="28" width="0.8128" layer="16"/>
-<wire x1="40" y1="28" x2="42.56" y2="30.56" width="0.8128" layer="16"/>
-<wire x1="42.56" y1="30.56" x2="46.72" y2="30.56" width="0.8128" layer="16"/>
+<contactref element="D3" pad="C"/>
+<contactref element="U$4" pad="P$2"/>
+<contactref element="U$2" pad="BATT+"/>
+<wire x1="19.725" y1="38" x2="24" y2="38" width="0.8128" layer="16"/>
+<wire x1="24" y1="38" x2="25" y2="38" width="0.8128" layer="16"/>
+<wire x1="25" y1="38" x2="31" y2="38.2" width="0.8128" layer="16"/>
+<wire x1="31.179309375" y1="43.179309375" x2="31" y2="43.06973125" width="0.8128" layer="16"/>
+<wire x1="31" y1="38.2" x2="31" y2="43.06973125" width="0.8128" layer="16"/>
+<wire x1="37" y1="49" x2="37" y2="50.4" width="0.8128" layer="16"/>
+<wire x1="31.179309375" y1="43.179309375" x2="37" y2="49" width="0.8128" layer="16"/>
+<wire x1="40" y1="28" x2="50" y2="28" width="0.8128" layer="16"/>
+<wire x1="53.44" y1="31.44" x2="53.44" y2="31.72" width="0.8128" layer="16"/>
+<wire x1="50" y1="28" x2="53.44" y2="31.44" width="0.8128" layer="16"/>
+<wire x1="27.389265625" y1="28" x2="24" y2="31.389265625" width="0.8128" layer="16"/>
+<wire x1="24" y1="31.389265625" x2="24" y2="38" width="0.8128" layer="16"/>
 </signal>
 <signal name="V_SOLAR">
 <contactref element="J2" pad="2"/>
 <contactref element="U$1" pad="P$1"/>
 <wire x1="6" y1="57.46" x2="10.46" y2="57.46" width="0.8128" layer="16"/>
-<wire x1="12.275" y1="59.275" x2="12.275" y2="64" width="0.8128" layer="16"/>
+<wire x1="12.275" y1="59.275" x2="12.275" y2="67" width="0.8128" layer="16"/>
 <wire x1="10.46" y1="57.46" x2="12.275" y2="59.275" width="0.8128" layer="16"/>
-</signal>
-<signal name="N$36">
-<contactref element="U$2" pad="V_BATT+"/>
-<contactref element="D3" pad="C"/>
-<contactref element="U$4" pad="P$2"/>
-<wire x1="13.47" y1="34.84" x2="19.565" y2="34.84" width="0.8128" layer="16"/>
-<wire x1="19.565" y1="34.84" x2="20" y2="35.275" width="0.8128" layer="16"/>
-<wire x1="20" y1="35.275" x2="29.475" y2="35.275" width="0.8128" layer="16"/>
-<wire x1="29.475" y1="35.275" x2="30" y2="35.8" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="J1" pad="2"/>
 <contactref element="U$4" pad="P$1"/>
-<wire x1="9" y1="37.46" x2="13.46" y2="37.46" width="0.8128" layer="16"/>
-<wire x1="13.46" y1="37.46" x2="15" y2="39" width="0.8128" layer="16"/>
-<wire x1="15" y1="39" x2="19.725" y2="39" width="0.8128" layer="16"/>
-<wire x1="19.725" y1="39" x2="20" y2="38.725" width="0.8128" layer="16"/>
+<wire x1="15.735" y1="37.46" x2="16.275" y2="38" width="0.8128" layer="16"/>
+<wire x1="15.735" y1="37.46" x2="9" y2="37.46" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="R3" pad="1"/>
@@ -1844,9 +1834,9 @@ design rules under a new name.</description>
 <wire x1="52" y1="12" x2="53" y2="11" width="0.8128" layer="16"/>
 <wire x1="39.905" y1="11.9266" x2="39.9784" y2="12" width="0.8128" layer="16"/>
 <wire x1="39.9784" y1="12" x2="52" y2="12" width="0.8128" layer="16"/>
-<wire x1="6" y1="27.73" x2="25.27" y2="27.73" width="0.6096" layer="16"/>
-<wire x1="25.27" y1="27.73" x2="32" y2="21" width="0.6096" layer="16"/>
-<wire x1="32" y1="21" x2="32" y2="14" width="0.6096" layer="16"/>
+<wire x1="6" y1="27.73" x2="21.27" y2="27.73" width="0.6096" layer="16"/>
+<wire x1="21.27" y1="27.73" x2="32" y2="17" width="0.6096" layer="16"/>
+<wire x1="32" y1="17" x2="32" y2="14" width="0.6096" layer="16"/>
 <wire x1="32" y1="14" x2="34.0734" y2="11.9266" width="0.6096" layer="16"/>
 <wire x1="34.0734" y1="11.9266" x2="36.095" y2="11.9266" width="0.6096" layer="16"/>
 </signal>
@@ -1868,11 +1858,18 @@ design rules under a new name.</description>
 <signal name="BUTTON_WAKEUP_INT">
 <contactref element="TP1" pad="TP"/>
 <contactref element="J4" pad="2"/>
-<wire x1="6" y1="47.54" x2="32.54" y2="47.54" width="0.6096" layer="16"/>
-<wire x1="32.54" y1="47.54" x2="44" y2="60" width="0.6096" layer="16"/>
-<wire x1="44" y1="60" x2="65" y2="60" width="0.6096" layer="16"/>
+<wire x1="6" y1="47.54" x2="23.54" y2="47.54" width="0.6096" layer="16"/>
+<wire x1="23.54" y1="47.54" x2="35" y2="60" width="0.6096" layer="16"/>
+<wire x1="35" y1="60" x2="65" y2="60" width="0.6096" layer="16"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>

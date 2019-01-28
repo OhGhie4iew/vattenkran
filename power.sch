@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -191,29 +191,6 @@ In this library the device names are the same as the pin names of the symbols, t
 	&lt;li&gt;XL6009 Boost converter&lt;/li&gt;
 &lt;/ul&gt;</description>
 <packages>
-<package name="BATTERY_CHARGER">
-<wire x1="-8.75" y1="14" x2="-4" y2="14" width="0.127" layer="21"/>
-<wire x1="-4" y1="14" x2="4" y2="14" width="0.127" layer="21"/>
-<wire x1="4" y1="14" x2="8.75" y2="14" width="0.127" layer="21"/>
-<wire x1="8.75" y1="14" x2="8.75" y2="-14" width="0.127" layer="21"/>
-<wire x1="8.75" y1="-14" x2="6.5" y2="-14" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-14" x2="6.5" y2="-12.5" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-12.5" x2="-6.5" y2="-12.5" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-12.5" x2="-6.5" y2="-14" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-14" x2="-8.75" y2="-14" width="0.127" layer="21"/>
-<wire x1="-8.75" y1="-14" x2="-8.75" y2="14" width="0.127" layer="21"/>
-<wire x1="-4" y1="14" x2="-4" y2="15.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="15.5" x2="4" y2="15.5" width="0.127" layer="21"/>
-<wire x1="4" y1="15.5" x2="4" y2="14" width="0.127" layer="21"/>
-<pad name="GND@1" x="-6.75" y="11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_IN" x="6.75" y="11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="GND@2" x="-6.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_BATT-" x="-3.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_BATT+" x="3.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="V_OUT" x="6.75" y="-11.25" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
-<text x="-3" y="3" size="1.27" layer="21">Battery
-Charger</text>
-</package>
 <package name="QSKJ_BOOST_MODULE">
 <pad name="GND@1" x="-5.75" y="7.62" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
 <pad name="V_IN" x="-5.75" y="-7.62" drill="0.5" diameter="1.6764" shape="long" rot="R90"/>
@@ -227,22 +204,6 @@ Charger</text>
 <text x="-3.5" y="-11" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.25" y="-1.25" size="1.27" layer="48">Boost
 Converter</text>
-</package>
-<package name="LM2576HVS_BUCK_MODULE">
-<wire x1="0" y1="28" x2="0" y2="2" width="0.127" layer="21"/>
-<wire x1="0" y1="2" x2="2" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="2" y1="0" x2="42" y2="0" width="0.127" layer="21"/>
-<wire x1="42" y1="0" x2="44" y2="2" width="0.127" layer="21" curve="90"/>
-<wire x1="44" y1="2" x2="44" y2="28" width="0.127" layer="21"/>
-<wire x1="44" y1="28" x2="42" y2="30" width="0.127" layer="21" curve="90"/>
-<wire x1="42" y1="30" x2="2" y2="30" width="0.127" layer="21"/>
-<wire x1="2" y1="30" x2="0" y2="28" width="0.127" layer="21" curve="90"/>
-<text x="16" y="14" size="1.27" layer="21">LM2576HVS
-Buck converter</text>
-<pad name="IN" x="5" y="3.5" drill="1" diameter="5" shape="square"/>
-<pad name="GND@1" x="5" y="26.5" drill="1" diameter="5" shape="square"/>
-<pad name="GND@2" x="39" y="26.5" drill="1" diameter="5" shape="square"/>
-<pad name="OUT" x="39" y="3.5" drill="1" diameter="5" shape="square"/>
 </package>
 <package name="XL6009_BOOST_MODULE">
 <pad name="V_IN_GND" x="0" y="0" drill="1" diameter="3" shape="square"/>
@@ -261,21 +222,24 @@ Buck converter</text>
 <text x="36.83" y="13.97" size="1.27" layer="21">OUT +</text>
 <text x="36.83" y="2.54" size="1.27" layer="21">OUT -</text>
 </package>
+<package name="CN3791_MPPT_LIPO_SOLAR_CHARGER">
+<pad name="PANEL" x="5" y="28" drill="1.5" diameter="4" shape="octagon"/>
+<pad name="GND@1" x="5" y="13" drill="1.5" diameter="4" shape="octagon"/>
+<pad name="BATT+" x="25" y="2.4" drill="1.5" diameter="4" shape="octagon"/>
+<pad name="GND@2" x="20" y="2.4" drill="1.5" diameter="4" shape="octagon"/>
+<wire x1="0" y1="0" x2="0" y2="31" width="0.127" layer="21"/>
+<wire x1="0" y1="31" x2="49" y2="31" width="0.127" layer="21"/>
+<wire x1="49" y1="31" x2="49" y2="0" width="0.127" layer="21"/>
+<wire x1="49" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<hole x="4" y="4" drill="3"/>
+<hole x="45" y="4" drill="3"/>
+<hole x="45" y="27" drill="3"/>
+<text x="15" y="16" size="1.27" layer="21">CN3791 MPPT Charger</text>
+<text x="3" y="21" size="1.27" layer="21">Panel</text>
+<text x="21" y="6" size="1.27" layer="21">Batt</text>
+</package>
 </packages>
 <symbols>
-<symbol name="BATTERY_CHARGER">
-<pin name="V_IN" x="-20.32" y="5.08" length="middle"/>
-<pin name="GND@1" x="-20.32" y="-5.08" length="middle"/>
-<pin name="V_OUT" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="GND@2" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="V_BATT+" x="-2.54" y="-12.7" length="middle" rot="R90"/>
-<pin name="V_BATT-" x="2.54" y="-12.7" length="middle" rot="R90"/>
-<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
-<text x="-15.24" y="10.16" size="1.27" layer="94">LiPo Charger</text>
-</symbol>
 <symbol name="QSKJ_BOOST_MODULE">
 <description>Generic non isolated boost converter</description>
 <pin name="V_IN" x="-17.78" y="5.08" length="middle" direction="pwr"/>
@@ -287,18 +251,6 @@ Buck converter</text>
 <wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-</symbol>
-<symbol name="LM2576HVS_BUCK_MODULE">
-<wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="-2.54" size="1.778" layer="94">LM2576HVS
-Buck converter</text>
-<pin name="IN" x="-20.32" y="5.08" length="middle" direction="pwr"/>
-<pin name="GND@1" x="-20.32" y="-5.08" length="middle" direction="pwr"/>
-<pin name="OUT" x="20.32" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="GND@2" x="20.32" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="XL6009_BOOST_MODULE">
 <wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
@@ -312,38 +264,19 @@ Buck converter</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">XL6009 Boost converter</text>
 <text x="10.16" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="CN3791_MPPT_LIPO_SOLAR_CHARGER">
+<pin name="PANEL" x="-20.32" y="7.62" length="middle"/>
+<pin name="GND@1" x="-20.32" y="-7.62" length="middle"/>
+<pin name="BATT+" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="GND@2" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<text x="-12.7" y="0" size="1.778" layer="94">CN3791 MPPT Charger</text>
+<wire x1="-17.78" y1="12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="BATTERY_CHARGER">
-<description>&lt;h1&gt;LiPo Battery charger&lt;/h1&gt;
-TP4056
-
-&lt;ul&gt;
-&lt;li&gt;The input voltage: 5V&lt;/li&gt;
-&lt;li&gt;Maximum charging current: 1000 mA&lt;/li&gt;
-&lt;li&gt;Charge cut-off voltage: 4.2 V + / - 1%&lt;/li&gt;
-&lt;li&gt;The battery overcharge protection voltage: 2.5 V&lt;/li&gt;
-&lt;li&gt;Battery over-current protection current: 3 A&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="BATTERY_CHARGER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BATTERY_CHARGER">
-<connects>
-<connect gate="G$1" pin="GND@1" pad="GND@1"/>
-<connect gate="G$1" pin="GND@2" pad="GND@2"/>
-<connect gate="G$1" pin="V_BATT+" pad="V_BATT+"/>
-<connect gate="G$1" pin="V_BATT-" pad="V_BATT-"/>
-<connect gate="G$1" pin="V_IN" pad="V_IN"/>
-<connect gate="G$1" pin="V_OUT" pad="V_OUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="QSKJ_BOOST_MODULE">
 <description>&lt;h1&gt;QSKJ Boost module&lt;/h1&gt;
 &lt;dl&gt;
@@ -375,42 +308,6 @@ TP4056
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM2576HVS_BUCK_MODULE">
-<description>&lt;h1&gt;M2576HV LM2576 DC-DC Step Down 5V-60V to 1.25V-30V Adjustable Power Supply Module&lt;/h1&gt;
-
-Input voltage range: 5V-60V (rated Suggestions below 50V reliable) &lt;br/&gt;
-Output voltage range: 1.25V-26V &lt;br/&gt;
-Output current: 3A(MAX)-need to add heat sink &lt;br/&gt;
-Continuous working current: 1.2A (total power output within 20W) &lt;br/&gt;
-Conversion efficiency: Up to 92% (output voltage higher, the higher the efficiency) &lt;br/&gt;
-Switching Frequency: 150KHz &lt;br/&gt;
-Rectifier: Non-Synchronous Rectification &lt;br/&gt;
-Module Properties: Non-isolated step-down module (buck) &lt;br/&gt;
-Short circuit protection: current limiting, since the recovery &lt;br/&gt;
-Operating temperature: Industrial grade (-40℃ to +85℃) (output power 10W or less) &lt;br/&gt;
-Full load temperature rise: 40℃ &lt;br/&gt;
-Load regulation: ±0.5% &lt;br/&gt;
-Voltage regulation: ±0.5% &lt;br/&gt;
-Dynamic response speed: 5% 200uS &lt;br/&gt;
-Mode of connection:welding &lt;br/&gt;
-Size:4.3(L)*3.0(W)*1.2(H)cm&lt;br/&gt;</description>
-<gates>
-<gate name="G$1" symbol="LM2576HVS_BUCK_MODULE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LM2576HVS_BUCK_MODULE">
-<connects>
-<connect gate="G$1" pin="GND@1" pad="GND@1"/>
-<connect gate="G$1" pin="GND@2" pad="GND@2"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-<connect gate="G$1" pin="OUT" pad="OUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="XL6009_BOOST_MODULE">
 <description>&lt;b&gt;XL6009 Boost converter&lt;/b&gt;
 &lt;p&gt;
@@ -432,6 +329,27 @@ Size: 43 x 22 x 16mm&lt;br/&gt;
 <connect gate="G$1" pin="V_IN_GND" pad="V_IN_GND"/>
 <connect gate="G$1" pin="V_OUT" pad="V_OUT"/>
 <connect gate="G$1" pin="V_OUT_GND" pad="V_OUT_GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CN3791_MTTP_LIPO_SOLAR_CHARGER">
+<description>&lt;h1&gt;CN3791 MPPT Solar charger module&lt;/h1&gt;
+For single cell LIPO battery.
+Max 25V input.</description>
+<gates>
+<gate name="G$1" symbol="CN3791_MPPT_LIPO_SOLAR_CHARGER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CN3791_MPPT_LIPO_SOLAR_CHARGER">
+<connects>
+<connect gate="G$1" pin="BATT+" pad="BATT+"/>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="PANEL" pad="PANEL"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11144,18 +11062,10 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="U$2" library="breakout-modules" deviceset="BATTERY_CHARGER" device=""/>
 <part name="U$5" library="breakout-modules" deviceset="QSKJ_BOOST_MODULE" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$8" library="breakout-modules" deviceset="LM2576HVS_BUCK_MODULE" device=""/>
-<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24"/>
-<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2" value="SJ24"/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH3" value="Solar"/>
@@ -11182,55 +11092,128 @@ Source: www.kingbright.com</description>
 <part name="U$1" library="Semiconductors" deviceset="PTC" device="" value="1A"/>
 <part name="U$4" library="Semiconductors" deviceset="PTC" device="" value="2A"/>
 <part name="U$3" library="Semiconductors" deviceset="PTC" device="" value="2A"/>
+<part name="U$2" library="breakout-modules" deviceset="CN3791_MTTP_LIPO_SOLAR_CHARGER" device=""/>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="142.24" y="83.82" size="1.778" layer="91">Logic supply</text>
-<text x="83.82" y="83.82" size="1.778" layer="91">Battery charger</text>
+<text x="35.56" y="81.28" size="1.778" layer="91">Battery charger.
+Reverse polarity protected.</text>
 <text x="-25.4" y="86.36" size="1.778" layer="91">Solar regulator</text>
 <text x="17.78" y="15.24" size="1.778" layer="91">FIXME: High leakage current?</text>
 <text x="2.54" y="-5.08" size="1.778" layer="91">Valve power</text>
 </plain>
 <instances>
-<instance part="U$2" gate="G$1" x="99.06" y="63.5"/>
-<instance part="U$5" gate="G$1" x="154.94" y="63.5"/>
-<instance part="SUPPLY4" gate="GND" x="134.62" y="53.34"/>
-<instance part="SUPPLY5" gate="GND" x="175.26" y="53.34"/>
-<instance part="SUPPLY6" gate="GND" x="119.38" y="55.88"/>
-<instance part="SUPPLY7" gate="GND" x="78.74" y="53.34"/>
-<instance part="SUPPLY8" gate="GND" x="101.6" y="40.64"/>
-<instance part="U$8" gate="G$1" x="43.18" y="63.5"/>
-<instance part="SUPPLY13" gate="GND" x="63.5" y="53.34"/>
-<instance part="SUPPLY14" gate="GND" x="22.86" y="53.34"/>
-<instance part="D2" gate="G$1" x="7.62" y="58.42" rot="R90"/>
-<instance part="SUPPLY19" gate="GND" x="7.62" y="50.8"/>
-<instance part="D3" gate="G$1" x="10.16" y="17.78" rot="R90"/>
-<instance part="SUPPLY24" gate="GND" x="10.16" y="7.62"/>
-<instance part="J2" gate="G$1" x="-48.26" y="66.04"/>
-<instance part="SUPPLY16" gate="GND" x="-40.64" y="58.42"/>
-<instance part="J1" gate="G$1" x="-35.56" y="25.4"/>
-<instance part="SUPPLY12" gate="GND" x="-22.86" y="22.86"/>
-<instance part="TP3" gate="G$1" x="182.88" y="68.58" rot="R270"/>
-<instance part="LED1" gate="G$1" x="55.88" y="-25.4"/>
-<instance part="R3" gate="G$1" x="55.88" y="-38.1" rot="R270"/>
-<instance part="SUPPLY1" gate="GND" x="55.88" y="-45.72"/>
-<instance part="R1" gate="G$1" x="25.4" y="-27.94" rot="R270"/>
-<instance part="U$6" gate="G$1" x="76.2" y="-30.48"/>
-<instance part="SUPPLY2" gate="GND" x="71.12" y="-35.56"/>
-<instance part="SUPPLY3" gate="GND" x="111.76" y="-35.56"/>
-<instance part="U$9" gate="G$1" x="40.64" y="-22.86" rot="R90"/>
-<instance part="SUPPLY18" gate="GND" x="129.54" y="-38.1"/>
-<instance part="D4" gate="G$1" x="129.54" y="-30.48" rot="R90"/>
-<instance part="J3" gate="G$1" x="182.88" y="-20.32" rot="R180"/>
-<instance part="SUPPLY9" gate="GND" x="175.26" y="-38.1"/>
-<instance part="TP5" gate="G$1" x="7.62" y="-40.64" rot="R90"/>
-<instance part="J4" gate="G$1" x="-35.56" y="-25.4"/>
-<instance part="TP1" gate="G$1" x="-20.32" y="-22.86" rot="R270"/>
-<instance part="SUPPLY10" gate="GND" x="-27.94" y="-33.02"/>
-<instance part="U$1" gate="G$1" x="-7.62" y="68.58"/>
-<instance part="U$4" gate="G$1" x="-5.08" y="27.94"/>
-<instance part="U$3" gate="G$1" x="152.4" y="-20.32"/>
+<instance part="U$5" gate="G$1" x="154.94" y="63.5" smashed="yes"/>
+<instance part="SUPPLY4" gate="GND" x="134.62" y="53.34" smashed="yes">
+<attribute name="VALUE" x="132.715" y="50.165" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="GND" x="175.26" y="53.34" smashed="yes">
+<attribute name="VALUE" x="173.355" y="50.165" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY8" gate="GND" x="71.12" y="43.18" smashed="yes">
+<attribute name="VALUE" x="69.215" y="40.005" size="1.778" layer="96"/>
+</instance>
+<instance part="D3" gate="G$1" x="10.16" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.6774" y="20.32" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="12.4714" y="20.32" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY24" gate="GND" x="10.16" y="7.62" smashed="yes">
+<attribute name="VALUE" x="8.255" y="4.445" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="-48.26" y="66.04" smashed="yes">
+<attribute name="VALUE" x="-50.8" y="60.96" size="1.778" layer="96"/>
+<attribute name="NAME" x="-50.8" y="71.882" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY16" gate="GND" x="-40.64" y="58.42" smashed="yes">
+<attribute name="VALUE" x="-42.545" y="55.245" size="1.778" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="-35.56" y="25.4" smashed="yes">
+<attribute name="VALUE" x="-38.1" y="20.32" size="1.778" layer="96"/>
+<attribute name="NAME" x="-38.1" y="31.242" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY12" gate="GND" x="-22.86" y="22.86" smashed="yes">
+<attribute name="VALUE" x="-24.765" y="19.685" size="1.778" layer="96"/>
+</instance>
+<instance part="TP3" gate="G$1" x="182.88" y="68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="184.15" y="69.85" size="1.778" layer="95" rot="R270"/>
+<attribute name="TP_SIGNAL_NAME" x="181.61" y="67.31" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="LED1" gate="G$1" x="55.88" y="-25.4" smashed="yes">
+<attribute name="NAME" x="59.436" y="-29.972" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="61.595" y="-29.972" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="55.88" y="-38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="57.3786" y="-34.29" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="52.578" y="-34.29" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY1" gate="GND" x="55.88" y="-45.72" smashed="yes">
+<attribute name="VALUE" x="53.975" y="-48.895" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="25.4" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.8986" y="-24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="22.098" y="-24.13" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="U$6" gate="G$1" x="76.2" y="-30.48" smashed="yes">
+<attribute name="NAME" x="86.36" y="-15.24" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY2" gate="GND" x="71.12" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="69.215" y="-38.735" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY3" gate="GND" x="111.76" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="109.855" y="-38.735" size="1.778" layer="96"/>
+</instance>
+<instance part="U$9" gate="G$1" x="40.64" y="-22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.1" y="-17.78" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="40.64" y="-17.78" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY18" gate="GND" x="129.54" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="127.635" y="-41.275" size="1.778" layer="96"/>
+</instance>
+<instance part="D4" gate="G$1" x="129.54" y="-30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="129.0574" y="-27.94" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="131.8514" y="-27.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="J3" gate="G$1" x="182.88" y="-20.32" smashed="yes" rot="R180">
+<attribute name="VALUE" x="185.42" y="-15.24" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="185.42" y="-26.162" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="SUPPLY9" gate="GND" x="175.26" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="173.355" y="-41.275" size="1.778" layer="96"/>
+</instance>
+<instance part="TP5" gate="G$1" x="7.62" y="-40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="-41.91" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="8.89" y="-39.37" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="J4" gate="G$1" x="-35.56" y="-25.4" smashed="yes">
+<attribute name="VALUE" x="-38.1" y="-30.48" size="1.778" layer="96"/>
+<attribute name="NAME" x="-38.1" y="-19.558" size="1.778" layer="95"/>
+</instance>
+<instance part="TP1" gate="G$1" x="-20.32" y="-22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="-19.05" y="-21.59" size="1.778" layer="95" rot="R270"/>
+<attribute name="TP_SIGNAL_NAME" x="-21.59" y="-24.13" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="SUPPLY10" gate="GND" x="-27.94" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="-29.845" y="-36.195" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="-7.62" y="68.58" smashed="yes">
+<attribute name="NAME" x="-12.7" y="76.2" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-12.7" y="58.42" size="1.778" layer="96"/>
+</instance>
+<instance part="U$4" gate="G$1" x="-5.08" y="27.94" smashed="yes">
+<attribute name="NAME" x="-10.16" y="35.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-10.16" y="17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="152.4" y="-20.32" smashed="yes">
+<attribute name="NAME" x="147.32" y="-12.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="147.32" y="-30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="50.8" y="60.96" smashed="yes"/>
+<instance part="SUPPLY7" gate="GND" x="22.86" y="45.72" smashed="yes">
+<attribute name="VALUE" x="20.955" y="42.545" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11247,35 +11230,9 @@ Source: www.kingbright.com</description>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND@2"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND@1"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="78.74" y1="55.88" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="43.18" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="45.72" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="V_BATT-"/>
-<wire x1="101.6" y1="50.8" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
-<junction x="101.6" y="50.8"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="GND@2"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<wire x1="63.5" y1="55.88" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="GND@1"/>
-<pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="58.42" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
-<wire x1="7.62" y1="53.34" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND@2"/>
 </segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
@@ -11322,6 +11279,12 @@ Source: www.kingbright.com</description>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <wire x1="-27.94" y1="-30.48" x2="-27.94" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@1"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="30.48" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC5" class="0">
 <segment>
@@ -11332,41 +11295,34 @@ Source: www.kingbright.com</description>
 <pinref part="TP3" gate="G$1" pin="PP"/>
 </segment>
 </net>
-<net name="V_CHARGER" class="0">
-<segment>
-<wire x1="81.28" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="V_IN"/>
-<junction x="78.74" y="68.58"/>
-<wire x1="78.74" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="OUT"/>
-<wire x1="63.5" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
-<junction x="63.5" y="68.58"/>
-<label x="63.5" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="V_SOLAR_FUSED" class="0">
 <segment>
-<wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="IN"/>
-<junction x="22.86" y="68.58"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="7.62" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="60.96" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
-<junction x="7.62" y="68.58"/>
+<wire x1="7.62" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 <label x="2.54" y="73.66" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
-<junction x="7.62" y="68.58"/>
+<pinref part="U$2" gate="G$1" pin="PANEL"/>
+<junction x="30.48" y="68.58"/>
 </segment>
 </net>
 <net name="V_UNREG" class="0">
 <segment>
-<wire x1="116.84" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="V_OUT"/>
-<junction x="119.38" y="68.58"/>
 <pinref part="U$5" gate="G$1" pin="V_IN"/>
 <junction x="137.16" y="68.58"/>
-<wire x1="119.38" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
-<label x="119.38" y="73.66" size="1.778" layer="95"/>
+<wire x1="116.84" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="68.58" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<junction x="10.16" y="27.94"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<junction x="10.16" y="27.94"/>
+<pinref part="U$2" gate="G$1" pin="BATT+"/>
+<wire x1="86.36" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+<junction x="86.36" y="68.58"/>
+<label x="86.36" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <label x="2.54" y="-20.32" size="1.778" layer="95"/>
@@ -11391,20 +11347,6 @@ Source: www.kingbright.com</description>
 <junction x="-33.02" y="68.58"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <junction x="-22.86" y="68.58"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<wire x1="96.52" y1="53.34" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="50.8" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="V_BATT+"/>
-<junction x="96.52" y="50.8"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="10.16" y1="20.32" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
-<junction x="10.16" y="27.94"/>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
-<junction x="10.16" y="27.94"/>
 </segment>
 </net>
 <net name="N$3" class="0">
